@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat Application</title>
+</head>
+<body>
+	{% if question %}
+		<p>You: {{ question }}</p>
+		<p>{{ answer }}</p>
+	{% endif %}
+	<form method="POST">
+		<label for="question">Ask a question:</label>
+		<input type="text" name="question" id="question">
+		<input type="submit" value="Send">
+	</form>
+</body>
+</html>
